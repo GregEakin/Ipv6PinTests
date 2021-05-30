@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PinUnitTests
 {
@@ -87,6 +88,22 @@ namespace PinUnitTests
             }
 
             connection.Close();
+        }
+
+        [Test]
+        public async Task Test6()
+        {
+            var hostname = "localhost";
+            var port = 80;
+            var timeout = 200;
+            var ct = new CancellationToken();
+
+            using var tcpClient = new TcpClient();
+            var connection = tcpClient.ConnectAsync(hostname, port);
+            var whenAny = await Task.WhenAny(connection, Task.Delay(timeout, ct));
+            Assert.AreNotEqual(connection, whenAny);
+            Assert.IsNull(connection.Exception);
+            tcpClient.Close();
         }
     }
 
