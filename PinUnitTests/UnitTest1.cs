@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -108,4 +108,39 @@ namespace PinUnitTests
     }
 
     // netsh interface ipv6 show address
+
+    // 	📶 wifi 1F4F6  
+
+    // ☠ 2620 skull and cross bones
+
+    // ☀ 2600 Sun                     
+    // ⛱ 26F1 Sun Umbrella
+    // ⛐ 26D0 Car skid
+    // ♻ 267D Recycle symbol
+    // ⚛ 269B Atom symbol
+    // ♘ 2658 Knight
+    // ⛈ 26C8 Lightning
+    // ⚐ 2690 Flag
+    // ⛔ 26D4 Do not enter
+    // ☢ 2622 Radio active
+    // ☣ 2623 Bio Hazard
+    // ⚠ ni26A0 Warning sign
+    // 🍕 Pizza
+    // 🍺 Beer
+    // 📺
+    // 🤦
+    // 🎉
+    // 🏃
+    // 🏊
+    // 🤽
+    // 🏄
+    // 🏖
+    // 🌊
+    // 🏝️
+    // 🐬
+    // 🦈
+    // 🐋
+
+    // ☀🏝️🤽🏖🌊🦈🏊🐋🏄🐬
+    // ☀🏝️🤽🌊🦈🏊🏄
 }
